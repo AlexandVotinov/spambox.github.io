@@ -1,0 +1,133 @@
+@font-face {
+    font-family: logofont; 
+    src: url(fonts/logofont.ttf);
+   }
+
+ @font-face {
+    font-family: textfont; 
+    src: url(fonts/textfont.otf);
+ }
+
+
+
+ red{
+	color: rgb(208,0,0);
+}
+
+nomber, nomber:before{
+	content: "#";
+	font-size: 18px;
+	color: rgb(208,0,0);
+}
+
+name{
+	font-size: 20px;
+	color: #222;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+
+
+body{
+	background: url(images/background.png) #ddd;
+	font-family: textfont;
+	font-size: 18px;
+	color:#333;
+}
+
+.header{
+	position: relative;
+	min-width: 1000px;
+	height: 120px;
+	color: rgb(208,0,0);
+	transition: 1s;
+
+}
+
+.header:hover{
+	color: #ddd;
+	background:  rgb(208,0,0);
+	transition: 1s;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1),
+                 10px 10px 5px rgba(0,0,0,0.05),
+                 -10px 10px 5px rgba(0,0,0,0.05);
+}
+
+
+.header-logo{
+	position: absolute;
+	width: 360px;
+	height: 100%;
+	left: 20px;
+	font-size: 70px;
+	text-align: center;
+	line-height: 120px;
+	font-family: logofont;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+               }
+
+.header-info{
+
+}
+
+
+
+
+
+
+
+.navigation{
+	display: block;
+	width: 340px;
+	height: auto;
+	padding: 10px;
+	transition: 0.2s;
+
+}
+
+.navigation:hover{
+	background: rgba(208,0,0,.1);
+	animation-name: good;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+@keyframes good {
+	0%{
+
+	}
+
+	90%{
+		transform: scale(1.05);
+
+	}
+
+	100%{
+		transform: scale(1.03);
+	}
+
+}
+
+.social{
+	position: relative;
+	width: 360px;
+	min-height: 200px;
+	margin-top:20px;
+	left: 20px;
+	font-size: 14px;
+}
+
+
+
